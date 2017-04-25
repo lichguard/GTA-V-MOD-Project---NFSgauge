@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="script.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nativememory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="performance_timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\enums.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\natives.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\types.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\main.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="script.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nativememory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="performance_timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{5d58942b-ebbf-4d0a-9526-359e3a556796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{76275de1-64ca-4afe-9ebd-d1d2c3de4d8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{cb4896fb-32c4-4029-9a86-b2bde861fe1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{398f029d-0044-4535-abf7-21b138ffc375}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="textures\1 - NFS HP2 Texture\1-background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\1 - NFS HP2 Texture\1-background_night.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\1 - NFS HP2 Texture\1-background_skeleton.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\1 - NFS HP2 Texture\1-health_0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\1 - NFS HP2 Texture\1-health_25.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\1 - NFS HP2 Texture\1-health_50.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\1 - NFS HP2 Texture\1-health_75.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\1 - NFS HP2 Texture\1-health_100.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\1 - NFS HP2 Texture\1-needle.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\2 -NFS 2015 Texture\2-background_skeleton.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\2 -NFS 2015 Texture\2-background_skeleton_kmph.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\2 -NFS 2015 Texture\2-needle.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\3 - PENDING Speedo\3-background_skeleton.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\3 - PENDING Speedo\3-needle.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\4 - Flight Speedometer Texture\4-background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\4 - Flight Speedometer Texture\4-needle.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\1 - NFS HP2 Texture\blinker_right.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\1 - NFS HP2 Texture\shift_up_indicator.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\shift\shift_assist_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\shift\shift_assist_up.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NativeSpeedo.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
