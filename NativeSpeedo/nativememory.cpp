@@ -8,8 +8,6 @@
 #include <Psapi.h>
 #include "..\..\inc\main.h"
 
-
-
 MemoryAccess::MemoryAccess()
 {
 	const uintptr_t patternAddress = FindPattern(EntityPoolOpcodePattern, EntityPoolOpcodeMask);
@@ -39,14 +37,23 @@ uint32_t MemoryAccess::Get_Memory(int handle, int offset)const
 
 float MemoryAccess::GetVehicleRPM(int handle) const 
 {
-	
-	int offset = 1992;
+	eGameVersion gameVersion = getGameVersion();
+
+	auto offset = gameVersion >= G_VER_1_0_372_2_STEAM ? 0x7D4 : 0x7C4;
+	offset = gameVersion >= G_VER_1_0_877_1_STEAM ? 0x7F4 : offset;
+	offset = gameVersion >= G_VER_1_0_944_2_STEAM ? 0x814 : offset;
+	offset = gameVersion >= G_VER_1_0_1103_2_STEAM ? 0x824 : offset;
+	offset = gameVersion >= G_VER_1_0_1180_2_STEAM ? 0x844 : offset;
+
+	/*
+	int offset = 1992; //0x7C8
 	if (getGameVersion() > 27) // + 64
 		offset = 2068; 	//0x814
 	else if (getGameVersion() > 25) // +64
 		offset = 2036; 	//0x7F4
 	else if (getGameVersion() > 3)
-		offset = 2004;
+		offset = 2004; //0x7D4
+		*/
 
 	uintptr_t addr = GetAddressOfEntity(handle);
 	return addr == 0 ? 0.0f : *(float*)(addr + offset);
@@ -61,7 +68,16 @@ float MemoryAccess::GetVehicleRPM(int handle) const
 //uint32_t
 int MemoryAccess::GetGear(int handle) const
 {
+	eGameVersion gameVersion = getGameVersion();
 
+	auto offset = gameVersion >= G_VER_1_0_372_2_STEAM ? 0x7A0 : 0x790;
+	offset = gameVersion >= G_VER_1_0_877_1_STEAM ? 0x7C0 : offset;
+	offset = gameVersion >= G_VER_1_0_944_2_STEAM ? 0x7E0 : offset;
+	offset = gameVersion >= G_VER_1_0_1103_2_STEAM ? 0x7F0 : offset;
+	offset = gameVersion >= G_VER_1_0_1180_2_STEAM ? 0x810 : offset;
+
+
+	/*
 	int offset = 0x792;
 
 	if (getGameVersion() > 27) // + 64
@@ -70,7 +86,7 @@ int MemoryAccess::GetGear(int handle) const
 		offset = 0x7C0; 	//0x7D4
 	else if (getGameVersion() > 3)
 		offset = 0x7A0;
-
+		*/
 
 	const uint64_t address = GetAddressOfEntity(handle);
 	if (address == 0)
@@ -81,7 +97,15 @@ int MemoryAccess::GetGear(int handle) const
 }
 
 float MemoryAccess::GetClutch(int handle) const {
+	eGameVersion gameVersion = getGameVersion();
 
+	auto offset = gameVersion >= G_VER_1_0_372_2_STEAM ? 0x7E0 : 0x7D0;
+	offset = gameVersion >= G_VER_1_0_877_1_STEAM ? 0x800 : offset;
+	offset = gameVersion >= G_VER_1_0_944_2_STEAM ? 0x820 : offset;
+	offset = gameVersion >= G_VER_1_0_1103_2_STEAM ? 0x830 : offset;
+	offset = gameVersion >= G_VER_1_0_1180_2_STEAM ? 0x850 : offset;
+
+	/*
 	int offset = 0x7D0;
 
 	if (getGameVersion() > 27) // + 64
@@ -90,7 +114,7 @@ float MemoryAccess::GetClutch(int handle) const {
 		offset = 0x800; 
 	else if (getGameVersion() > 3)
 		offset = 0x7E0;
-
+		*/
 
 	const uint64_t address = GetAddressOfEntity(handle);
 
@@ -102,6 +126,16 @@ float MemoryAccess::GetClutch(int handle) const {
 
 uint32_t MemoryAccess::GetTopGear(int handle) const {
 
+	eGameVersion gameVersion = getGameVersion();
+
+	auto offset = gameVersion >= G_VER_1_0_372_2_STEAM ? 0x7A6 : 0x796;
+	offset = gameVersion >= G_VER_1_0_877_1_STEAM ? 0x7C6 : offset;
+	offset = gameVersion >= G_VER_1_0_944_2_STEAM ? 0x7E6 : offset;
+	offset = gameVersion >= G_VER_1_0_1103_2_STEAM ? 0x7F6 : offset;
+	offset = gameVersion >= G_VER_1_0_1180_2_STEAM ? 0x816 : offset;
+
+
+	/*
 	int offset = 0x796;
 
 	if (getGameVersion() > 27) // + 64
@@ -110,7 +144,7 @@ uint32_t MemoryAccess::GetTopGear(int handle) const {
 		offset = 0x7C6; 	//0x7D4
 	else if (getGameVersion() > 3)
 		offset = 0x7A6;
-
+		*/
 
 	const uint64_t address = GetAddressOfEntity(handle);
 

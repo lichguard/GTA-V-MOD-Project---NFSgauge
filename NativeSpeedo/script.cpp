@@ -821,7 +821,19 @@ int textureid_assist_shift_down = 0;
 
 		draw_text(local_settings.speed_units.get_string(), local_settings.posx + 0.0f, local_settings.posy + 0.03f + (0.03f *local_settings.scale - 0.03f), 0.4f * local_settings.scale, 0.4f * local_settings.scale); //7
 
+		//GRAPHICS::draw_re
 
+		/*
+		//for nitro 
+		if ((lightsOn != 0 || highbeamsOn != 0) && local_settings.enable_night_light)
+			drawTexture(idTextureSpeedoBack_night, 0, 9996, 100, 0.17f * local_settings.scale, 0.17f * local_settings.scale, 0.5f, 0.5f, local_settings.posx, local_settings.posy, 0.0f, screencorrection, 1.0f, 1.0f, 1.0f, speedoAlpha);  //3
+		else
+			drawTexture(idTextureSpeedoBack, 0, 9996, 100, 0.17f * local_settings.scale, 0.17f * local_settings.scale, 0.5f, 0.5f, local_settings.posx, local_settings.posy, 0.0f, screencorrection, 1.0f, 1.0f, 1.0f, speedoAlpha);  //3
+
+
+		drawTexture(idTextureSpeedoBackSkeleton, 0, 9997, 100, 0.17f * local_settings.scale, 0.17f * local_settings.scale, 0.5f, 0.5f, local_settings.posx, local_settings.posy, 0.0f, screencorrection, 1.0f, 1.0f, 1.0f, speedoAlpha);  //3
+		drawTexture(idTextureSpeedoArrow, 0, 9999, 100, 0.17f * local_settings.scale, 0.17f * local_settings.scale, 0.5f, 0.5f, local_settings.posx, local_settings.posy, rotation, screencorrection, 1.0f, 1.0f, 1.0f, speedoAlpha);  //4
+		*/
 	}
 	void NFS2015_speedometer::draw_speedo() const
 	{

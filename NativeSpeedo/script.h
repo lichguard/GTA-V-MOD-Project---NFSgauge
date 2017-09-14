@@ -10,7 +10,7 @@
 #include "menu.h"
 #include <string>
 
-#define MOD_VERSION "v2.65"
+#define MOD_VERSION "v2.63.1"
 #define MAX_ACCURACY 28
 #define MAX_SCALE 2.0f
 #define MAX_POSX 1.5f

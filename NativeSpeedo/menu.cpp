@@ -188,7 +188,7 @@ void Menu::register_action()
 	}
 }
 
-void draw_menu_text(float x, float y, float scale, int font,const  std::string& text)//color: 0 - white, 1 - grey, 2 - green
+void draw_menu_text(float x, float y, float scale, int font,const std::string& text)//color: 0 - white, 1 - grey, 2 - green
 {
 	UI::SET_TEXT_FONT(font);
 	UI::SET_TEXT_SCALE(scale, scale);
