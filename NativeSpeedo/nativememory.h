@@ -19,9 +19,9 @@ public:
 
 	uint32_t Get_Memory(int handle, int offset) const;
 	 float GetVehicleRPM(int handle) const;
-	 int GetGear(int handle) const;
+	 uint16_t GetGear(int handle) const;
 	 float GetClutch(int handle) const;
-	 uint32_t GetTopGear(int handle) const;
+	 unsigned char GetTopGear(int handle) const;
 private:
 	static uintptr_t FindPattern(const char *pattern, const char *mask);
 	static uintptr_t GetAddressOfItemInPool(const MemoryPool *PoolAddress, int Handle);

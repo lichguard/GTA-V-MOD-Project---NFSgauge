@@ -55,7 +55,7 @@
     <ProjectGuid>{8D82F34A-1D64-465B-84B1-37F89AD3D20B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>NativeSpeedo</RootNamespace>
-    <ProjectName>NFSgauge2</ProjectName>
+    <ProjectName>NFSgauge</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">

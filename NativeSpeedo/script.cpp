@@ -420,7 +420,11 @@ void main()
 	create_menu();
 
 	if (active_speedo != nullptr)
+	{
 		delete active_speedo;
+		active_speedo = nullptr;
+	}
+
 
 	while (true)
 	{
